@@ -15,7 +15,7 @@ function prepareArguments(slimOptions) {
 
 function compileToSlim(source, slimOptions) {
 	var additionalArguments = prepareArguments(slimOptions);
-	return execSync(`slimrb ${additionalArguments}`, { input: source })
+	return execSync(`slim ${additionalArguments}`, { input: source })
 }
 
 module.exports = function(source) {
